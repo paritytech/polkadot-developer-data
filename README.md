@@ -11,14 +11,7 @@ Some additional context can be found [here](https://forum.parity.io/t/developer-
 
 ## Configuration 
 
-It is necessary to have a small file to configure the script as well as add an `.env` file with your GitHub API Key.
-
-`.env`, not added to this repository. 
-
-```
-GITHUB_ACCESS_TOKEN=...
-```
-
+It is necessary to have a small file to configure the script.
 
 `config.yaml`, included in this repository.
 
@@ -37,4 +30,14 @@ rules:
 
 ```
 
+## Installing
 
+Clone the repository & run `cargo build`.
+
+## Running
+
+For ideal automation, the target usage should be:
+
+```
+GITHUB_ACCESS_TOKEN="..." ./crawler -c ./config.yaml 
+```
