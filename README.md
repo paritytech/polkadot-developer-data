@@ -19,7 +19,7 @@ config:
 rules:
   js:
     - '@polkadot filename:package.json'
-	- '@talisman filename:package.json'
+    - '@talisman filename:package.json'
 	
   rust:
     - 'frame filename:Cargo.toml'
