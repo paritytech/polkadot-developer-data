@@ -1,7 +1,3 @@
-config:
-  output_file: './repos.csv'
-  compute_statistics: off 
-
 rules:
   js:
     - '@polkadot filename:package.json' # matching polkadot JS api

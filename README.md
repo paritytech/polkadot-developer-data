@@ -11,15 +11,11 @@ Some additional context can be found [here](https://forum.parity.io/t/developer-
 
 ## Configuration 
 
-It is necessary to have a small file to configure the script.
+A configuration file `config.yaml` is used to provide the rules used for fetching the repositories.
 
-`config.yaml`, included in this repository.
+`config.yaml`
 
 ```
-config:
-  output_file: './repos.csv'
-  compute_statistics: off 
-
 rules:
   js:
     - '@polkadot filename:package.json' # matching polkadot JS api
@@ -39,7 +35,7 @@ Clone the repository & run `cargo build`.
 For ideal automation, the target usage should be:
 
 ```
-./crawler -c ./config.yaml 
+./crawler -c ./config.yaml -o ./repos_202301.csv
 ```
 
 Note that the `GITHUB_ACCESS_TOKEN` will be automatically fetched from the system environment variables, if present. 
@@ -47,5 +43,5 @@ Note that the `GITHUB_ACCESS_TOKEN` will be automatically fetched from the syste
 It can be overriden with:
 
 ```
-GITHUB_ACCESS_TOKEN="..." ./crawler -c ./config.yaml 
+GITHUB_ACCESS_TOKEN="..." ./crawler -c ./config.yaml -o ./repos_202301.csv
 ```
