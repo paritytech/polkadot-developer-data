@@ -11,6 +11,17 @@ Some additional context can be found [here](https://forum.parity.io/t/developer-
 
 ## Configuration 
 
+It is necessary to have a small file to configure the script as well as add an `.env` file with your GitHub API Key.
+
+`.env`, not added to this repository. 
+
+```
+GITHUB_ACCESS_TOKEN=...
+```
+
+
+`config.yaml`, included in this repository.
+
 ```
 config:
   output_path: './repos.csv'
@@ -18,11 +29,11 @@ config:
 
 rules:
   js:
-    - '@polkadot filename:package.json'
-    - '@talisman filename:package.json'
+    - '@polkadot filename:package.json' # matching polkadot JS api
+    - '@talisman filename:package.json' # matching talisman wallet integration
 	
   rust:
-    - 'frame filename:Cargo.toml'
+    - 'frame filename:Cargo.toml' # project uses frame
 
 ```
 

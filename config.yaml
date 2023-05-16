@@ -1,0 +1,11 @@
+config:
+  output_path: './repos.csv'
+  compute_stats: off 
+
+rules:
+  js:
+    - '@polkadot filename:package.json' # matching polkadot JS api
+    - '@talisman filename:package.json' # matching talisman wallet integration
+	
+  rust:
+    - 'frame filename:Cargo.toml' # project uses frame
