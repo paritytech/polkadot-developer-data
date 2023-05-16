@@ -39,5 +39,13 @@ Clone the repository & run `cargo build`.
 For ideal automation, the target usage should be:
 
 ```
+./crawler -c ./config.yaml 
+```
+
+Note that the `GITHUB_ACCESS_TOKEN` will be automatically fetched from the system environment variables, if present. 
+
+It can be overriden with:
+
+```
 GITHUB_ACCESS_TOKEN="..." ./crawler -c ./config.yaml 
 ```
