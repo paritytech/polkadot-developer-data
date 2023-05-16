@@ -17,8 +17,8 @@ It is necessary to have a small file to configure the script.
 
 ```
 config:
-  output_path: './repos.csv'
-  compute_stats: off 
+  output_file: './repos.csv'
+  compute_statistics: off 
 
 rules:
   js:
