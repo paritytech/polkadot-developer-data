@@ -17,13 +17,13 @@ A configuration file `config.yaml` is used to provide the rules used for fetchin
 
 ```
 rules:
-  js:
-    - '@polkadot filename:package.json' # matching polkadot JS api
-    - '@talisman filename:package.json' # matching talisman wallet integration
-	
-  rust:
-    - 'frame filename:Cargo.toml' # project uses frame
-
+  github:
+    js:
+      - '@polkadot filename:package.json' # matching polkadot JS api
+      - '@talisman filename:package.json' # matching talisman wallet integration
+    
+    rust:
+      - 'frame filename:Cargo.toml' # project uses frame
 ```
 
 ## Installing
@@ -45,3 +45,7 @@ It can be overriden with:
 ```
 GITHUB_ACCESS_TOKEN="..." ./crawler -c ./config.yaml -o ./repos_202301.csv
 ```
+
+## Future
+
+In the future, this crawler can be configured to use more sources than just GitHub. 
