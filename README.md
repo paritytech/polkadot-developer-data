@@ -6,8 +6,6 @@ These repositories are collected using a set of static heuristics as well as Git
 
 A binary is built that can be run periodically, with different configuration files. 
 
-Some additional context can be found [here](https://forum.parity.io/t/developer-activity-getting-it-right/1695).
-
 
 ## Configuration 
 
